@@ -1,0 +1,16 @@
+.content {
+  padding: 40px !important;
+  .favorites{
+    display: flex;
+    margin-bottom:40px !important;
+  }
+  .text {
+    margin: 0;
+  }
+  .box {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+  }
+}

@@ -1,0 +1,68 @@
+.content {
+  padding: 40px;
+
+  .text {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #333;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .page {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px !important;
+    justify-content: space-between;
+  }
+
+  .search-block {
+    display: flex;
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+    padding: 0 15px;
+    position: relative;
+
+    .clear {
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      width: 18px;
+      height: 18px;
+      top: 14px;
+
+    }
+
+    .headerInput {
+      border: 0;
+      padding: 13px;
+      font-size: 16px;
+      width: 200px;
+    }
+
+  }
+
+  .box {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box > div {
+    width: calc(50% - 10px); /* вычитаем отступы, чтобы поместилось два объекта в строке */
+    margin: 5px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .box > div {
+      width: 100%; /* один объект на всю ширину строки */
+      margin: 5px 0;
+    }
+  }
+
+
+}
+
