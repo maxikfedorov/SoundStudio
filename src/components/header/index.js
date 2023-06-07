@@ -56,7 +56,9 @@ function Header(props) {
                 </li>
 
                 <li>
-                    <img className='headerImg' width={18} height={18} src={user} alt='Личный кабинет'/>
+                    <Link to={'/auth'}>
+                        <img className='headerImg' width={18} height={18} src={user} alt='Личный кабинет'/>
+                    </Link>
                 </li>
             </ul>
         </header>

@@ -1,0 +1,57 @@
+.banner {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Стили для формы регистрации */
+.form-reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0077ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005ae6;
+}
+
+.btn-delete{
+    background-color: rgba(196, 20, 20, 0.76);
+}
+
+.btn-delete:hover{
+    background-color: rgb(105, 3, 3);
+}

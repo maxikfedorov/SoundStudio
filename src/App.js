@@ -131,8 +131,10 @@ function App() {
         }}>
             <div className="wrapper">
                 {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveItem}/>}
+
                 <Header onClickCart={() => setCartOpened(true)}/>
                 <Navigation/>
+
             </div>
         </AppContext.Provider>
     );

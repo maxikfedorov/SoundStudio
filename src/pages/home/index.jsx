@@ -12,7 +12,7 @@
  * @returns {JSX.Element} - возвращает JSX разметку компонента.
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import Card from "../../components/card";
 import './style.scss';
 import AppContext from "../../components/contextx";
@@ -31,6 +31,7 @@ function Home({}) {
         onAddToFavorite,
         onAddToCart,
         isLoading
+        // eslint-disable-next-line react-hooks/rules-of-hooks
     } = React.useContext(AppContext);
 
     const renderItems = () => {
